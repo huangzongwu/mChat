@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B05397013BF85D50002D259 /* XMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B05396F13BF85D50002D259 /* XMPPManager.m */; };
+		5B2061D913C0A02500527761 /* RosterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2061D813C0A02500527761 /* RosterController.m */; };
+		5B39A3C113E4999C0056CC74 /* ChunkXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B39A3C013E4999C0056CC74 /* ChunkXMLParser.m */; };
+		5B39A3C413E49A050056CC74 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B39A3C313E49A040056CC74 /* libxml2.2.dylib */; };
+		5B3E7ED013BFD48A0004D8CD /* RowResizableOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7ECA13BFD48A0004D8CD /* RowResizableOutlineView.m */; };
+		5B3E7ED113BFD48A0004D8CD /* RowResizableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E7ECC13BFD48A0004D8CD /* RowResizableTableView.m */; };
+		5B43154A13E0118A008838FE /* NetStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B43154913E0118A008838FE /* NetStream.m */; };
+		5B5B276213CE3EA700ED9233 /* mChatImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5E1413BF6D4700DC5A76 /* mChatImporter.mdimporter */; };
+		5B6A74E513DC9C500052E14B /* Thread.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A74E413DC9C500052E14B /* Thread.m */; };
+		5B7F4E2B13E08E4800180D86 /* XMLRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F4E2A13E08E4800180D86 /* XMLRepresentation.m */; };
+		5B9E005013E6EC4C00DAC8DF /* XMLRepFeatures.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E004F13E6EC4B00DAC8DF /* XMLRepFeatures.m */; };
+		5B9E005413E6ECFF00DAC8DF /* XMLRepChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E005213E6ECFF00DAC8DF /* XMLRepChat.m */; };
+		5B9E005513E6ECFF00DAC8DF /* XMLRepIQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E005313E6ECFF00DAC8DF /* XMLRepIQ.m */; };
+		5BDD9C0B13C9C0B6005D7BF2 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDD9C0A13C9C0B6005D7BF2 /* libssl.dylib */; };
+		5BDD9C0E13C9C0C9005D7BF2 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDD9C0D13C9C0C9005D7BF2 /* libcrypto.dylib */; };
+		5BDD9C5D13C9CBB8005D7BF2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BDD9C5C13C9CBB8005D7BF2 /* SystemConfiguration.framework */; };
+		5BED5DDF13BF6D4500DC5A76 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED5DDE13BF6D4500DC5A76 /* Cocoa.framework */; };
+		5BED5DE913BF6D4500DC5A76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5DE713BF6D4500DC5A76 /* InfoPlist.strings */; };
+		5BED5DEC13BF6D4500DC5A76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5DEB13BF6D4500DC5A76 /* main.m */; };
+		5BED5DEF13BF6D4500DC5A76 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5DED13BF6D4500DC5A76 /* Credits.rtf */; };
+		5BED5DF213BF6D4500DC5A76 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5DF113BF6D4500DC5A76 /* ChatController.m */; };
+		5BED5DF513BF6D4500DC5A76 /* ChatController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5DF313BF6D4500DC5A76 /* ChatController.xib */; };
+		5BED5DF813BF6D4600DC5A76 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5DF613BF6D4600DC5A76 /* MainMenu.xib */; };
+		5BED5DFB13BF6D4600DC5A76 /* ChatController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5DF913BF6D4600DC5A76 /* ChatController.xcdatamodeld */; };
+		5BED5E0213BF6D4700DC5A76 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED5DDE13BF6D4500DC5A76 /* Cocoa.framework */; };
+		5BED5E0A13BF6D4700DC5A76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5E0813BF6D4700DC5A76 /* InfoPlist.strings */; };
+		5BED5E0D13BF6D4700DC5A76 /* mChatTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5E0C13BF6D4700DC5A76 /* mChatTests.h */; };
+		5BED5E0F13BF6D4700DC5A76 /* mChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5E0E13BF6D4700DC5A76 /* mChatTests.m */; };
+		5BED5E1913BF6D4700DC5A76 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED5E1813BF6D4700DC5A76 /* CoreServices.framework */; };
+		5BED5E1B13BF6D4700DC5A76 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED5E1A13BF6D4700DC5A76 /* CoreFoundation.framework */; };
+		5BED5E1D13BF6D4700DC5A76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED5E1C13BF6D4700DC5A76 /* CoreData.framework */; };
+		5BED5E1F13BF6D4700DC5A76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BED5E1E13BF6D4700DC5A76 /* Foundation.framework */; };
+		5BED5E2513BF6D4700DC5A76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BED5E2313BF6D4700DC5A76 /* InfoPlist.strings */; };
+		5BED5E2813BF6D4700DC5A76 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5E2713BF6D4700DC5A76 /* main.c */; };
+		5BED5E2A13BF6D4700DC5A76 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5E2913BF6D4700DC5A76 /* GetMetadataForFile.m */; };
+		5BED5E2D13BF6D4700DC5A76 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5E2C13BF6D4700DC5A76 /* MySpotlightImporter.m */; };
+		5BFA6B2713C31D070055B1B0 /* XMLProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA6B2613C31D070055B1B0 /* XMLProcessor.m */; };
+		B7FDA9101545899500A1B3A9 /* SSCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */; };
+		B7FDA911154589AE00A1B3A9 /* SSCrypto.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B5B276013CE3E9E00ED9233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BED5DD113BF6D4400DC5A76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BED5E1313BF6D4700DC5A76;
+			remoteInfo = mChatImporter;
+		};
+		5BED5E0313BF6D4700DC5A76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BED5DD113BF6D4400DC5A76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BED5DD913BF6D4500DC5A76;
+			remoteInfo = mChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5BDD9C1513C9C597005D7BF2 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B7FDA911154589AE00A1B3A9 /* SSCrypto.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B04435113DA156D00601A34 /* mChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mChat.entitlements; path = mChat/mChat.entitlements; sourceTree = "<group>"; };
+		5B05396E13BF85D50002D259 /* XMPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPManager.h; sourceTree = "<group>"; };
+		5B05396F13BF85D50002D259 /* XMPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPManager.m; sourceTree = "<group>"; };
+		5B2061D713C0A02500527761 /* RosterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosterController.h; sourceTree = "<group>"; };
+		5B2061D813C0A02500527761 /* RosterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosterController.m; sourceTree = "<group>"; };
+		5B39A3BF13E4999C0056CC74 /* ChunkXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChunkXMLParser.h; sourceTree = "<group>"; };
+		5B39A3C013E4999C0056CC74 /* ChunkXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChunkXMLParser.m; sourceTree = "<group>"; };
+		5B39A3C313E49A040056CC74 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		5B3E7EC913BFD48A0004D8CD /* RowResizableOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowResizableOutlineView.h; sourceTree = "<group>"; };
+		5B3E7ECA13BFD48A0004D8CD /* RowResizableOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowResizableOutlineView.m; sourceTree = "<group>"; };
+		5B3E7ECB13BFD48A0004D8CD /* RowResizableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowResizableTableView.h; sourceTree = "<group>"; };
+		5B3E7ECC13BFD48A0004D8CD /* RowResizableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowResizableTableView.m; sourceTree = "<group>"; };
+		5B3E7ECD13BFD48A0004D8CD /* RowResizableViewImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowResizableViewImplementation.h; sourceTree = "<group>"; };
+		5B3E7ECE13BFD48A0004D8CD /* RowResizableViewMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowResizableViewMethods.h; sourceTree = "<group>"; };
+		5B3E7ECF13BFD48A0004D8CD /* RowResizableViewVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowResizableViewVars.h; sourceTree = "<group>"; };
+		5B43154813E0118A008838FE /* NetStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetStream.h; sourceTree = "<group>"; };
+		5B43154913E0118A008838FE /* NetStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetStream.m; sourceTree = "<group>"; };
+		5B6A74E313DC9C500052E14B /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		5B6A74E413DC9C500052E14B /* Thread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thread.m; sourceTree = "<group>"; };
+		5B7F4E2913E08E4800180D86 /* XMLRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRepresentation.h; sourceTree = "<group>"; };
+		5B7F4E2A13E08E4800180D86 /* XMLRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRepresentation.m; sourceTree = "<group>"; };
+		5B9E004F13E6EC4B00DAC8DF /* XMLRepFeatures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRepFeatures.m; sourceTree = "<group>"; };
+		5B9E005213E6ECFF00DAC8DF /* XMLRepChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRepChat.m; sourceTree = "<group>"; };
+		5B9E005313E6ECFF00DAC8DF /* XMLRepIQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRepIQ.m; sourceTree = "<group>"; };
+		5BDD9C0A13C9C0B6005D7BF2 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		5BDD9C0D13C9C0C9005D7BF2 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		5BDD9C5C13C9CBB8005D7BF2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5BED5DDA13BF6D4500DC5A76 /* mChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BED5DDE13BF6D4500DC5A76 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5BED5DE113BF6D4500DC5A76 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5BED5DE213BF6D4500DC5A76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BED5DE313BF6D4500DC5A76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BED5DE613BF6D4500DC5A76 /* mChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mChat-Info.plist"; sourceTree = "<group>"; };
+		5BED5DE813BF6D4500DC5A76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BED5DEA13BF6D4500DC5A76 /* mChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mChat-Prefix.pch"; sourceTree = "<group>"; };
+		5BED5DEB13BF6D4500DC5A76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BED5DEE13BF6D4500DC5A76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5BED5DF013BF6D4500DC5A76 /* ChatController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
+		5BED5DF113BF6D4500DC5A76 /* ChatController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
+		5BED5DF413BF6D4500DC5A76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ChatController.xib; sourceTree = "<group>"; };
+		5BED5DF713BF6D4600DC5A76 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5BED5DFA13BF6D4600DC5A76 /* ChatController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatController.xcdatamodel; sourceTree = "<group>"; };
+		5BED5E0113BF6D4700DC5A76 /* mChatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mChatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BED5E0713BF6D4700DC5A76 /* mChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mChatTests-Info.plist"; sourceTree = "<group>"; };
+		5BED5E0913BF6D4700DC5A76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BED5E0B13BF6D4700DC5A76 /* mChatTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mChatTests-Prefix.pch"; sourceTree = "<group>"; };
+		5BED5E0C13BF6D4700DC5A76 /* mChatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mChatTests.h; sourceTree = "<group>"; };
+		5BED5E0E13BF6D4700DC5A76 /* mChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mChatTests.m; sourceTree = "<group>"; };
+		5BED5E1413BF6D4700DC5A76 /* mChatImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mChatImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BED5E1813BF6D4700DC5A76 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		5BED5E1A13BF6D4700DC5A76 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5BED5E1C13BF6D4700DC5A76 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BED5E1E13BF6D4700DC5A76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BED5E2213BF6D4700DC5A76 /* mChatImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mChatImporter-Info.plist"; sourceTree = "<group>"; };
+		5BED5E2413BF6D4700DC5A76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BED5E2613BF6D4700DC5A76 /* mChatImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mChatImporter-Prefix.pch"; sourceTree = "<group>"; };
+		5BED5E2713BF6D4700DC5A76 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5BED5E2913BF6D4700DC5A76 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		5BED5E2B13BF6D4700DC5A76 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		5BED5E2C13BF6D4700DC5A76 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		5BED5E2E13BF6D4700DC5A76 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		5BFA6B2513C31D070055B1B0 /* XMLProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLProcessor.h; sourceTree = "<group>"; };
+		5BFA6B2613C31D070055B1B0 /* XMLProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLProcessor.m; sourceTree = "<group>"; };
+		B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SSCrypto.framework; path = ../../Finished/Build/Builds/Products/Development/SSCrypto.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BED5DD713BF6D4500DC5A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5DDF13BF6D4500DC5A76 /* Cocoa.framework in Frameworks */,
+				5BDD9C5D13C9CBB8005D7BF2 /* SystemConfiguration.framework in Frameworks */,
+				5BDD9C0E13C9C0C9005D7BF2 /* libcrypto.dylib in Frameworks */,
+				5BDD9C0B13C9C0B6005D7BF2 /* libssl.dylib in Frameworks */,
+				5B39A3C413E49A050056CC74 /* libxml2.2.dylib in Frameworks */,
+				B7FDA9101545899500A1B3A9 /* SSCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BED5DFD13BF6D4700DC5A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5E0213BF6D4700DC5A76 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BED5E1113BF6D4700DC5A76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5E1913BF6D4700DC5A76 /* CoreServices.framework in Frameworks */,
+				5BED5E1B13BF6D4700DC5A76 /* CoreFoundation.framework in Frameworks */,
+				5BED5E1D13BF6D4700DC5A76 /* CoreData.framework in Frameworks */,
+				5BED5E1F13BF6D4700DC5A76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B05397113BF85E10002D259 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B43154813E0118A008838FE /* NetStream.h */,
+				5B43154913E0118A008838FE /* NetStream.m */,
+				5B6A74E313DC9C500052E14B /* Thread.h */,
+				5B6A74E413DC9C500052E14B /* Thread.m */,
+				5B6A74DF13DC9BCF0052E14B /* XML processing */,
+				5B05396E13BF85D50002D259 /* XMPPManager.h */,
+				5B05396F13BF85D50002D259 /* XMPPManager.m */,
+			);
+			name = Network;
+			path = mChat;
+			sourceTree = "<group>";
+		};
+		5B3E7EC813BFD4550004D8CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5DF013BF6D4500DC5A76 /* ChatController.h */,
+				5BED5DF113BF6D4500DC5A76 /* ChatController.m */,
+				5B2061D713C0A02500527761 /* RosterController.h */,
+				5B2061D813C0A02500527761 /* RosterController.m */,
+			);
+			name = Controllers;
+			path = mChat;
+			sourceTree = "<group>";
+		};
+		5B6A74DF13DC9BCF0052E14B /* XML processing */ = {
+			isa = PBXGroup;
+			children = (
+				5B39A3BF13E4999C0056CC74 /* ChunkXMLParser.h */,
+				5B39A3C013E4999C0056CC74 /* ChunkXMLParser.m */,
+				5BFA6B2513C31D070055B1B0 /* XMLProcessor.h */,
+				5BFA6B2613C31D070055B1B0 /* XMLProcessor.m */,
+				5BDF9BDE13E58C7C002AF985 /* Representation */,
+			);
+			name = "XML processing";
+			sourceTree = "<group>";
+		};
+		5BDF9BDE13E58C7C002AF985 /* Representation */ = {
+			isa = PBXGroup;
+			children = (
+				5B7F4E2913E08E4800180D86 /* XMLRepresentation.h */,
+				5B7F4E2A13E08E4800180D86 /* XMLRepresentation.m */,
+				5B9E004F13E6EC4B00DAC8DF /* XMLRepFeatures.m */,
+				5B9E005313E6ECFF00DAC8DF /* XMLRepIQ.m */,
+				5B9E005213E6ECFF00DAC8DF /* XMLRepChat.m */,
+			);
+			name = Representation;
+			sourceTree = "<group>";
+		};
+		5BED5DCF13BF6D4400DC5A76 = {
+			isa = PBXGroup;
+			children = (
+				5B04435113DA156D00601A34 /* mChat.entitlements */,
+				5B05397113BF85E10002D259 /* Network */,
+				5B3E7EC813BFD4550004D8CD /* Controllers */,
+				5BED5DE413BF6D4500DC5A76 /* Views */,
+				5BF61E9A13C25D69009B2BD6 /* XIBs */,
+				5BED5E0513BF6D4700DC5A76 /* mChatTests */,
+				5BED5E2013BF6D4700DC5A76 /* mChatImporter */,
+				5BED5DDD13BF6D4500DC5A76 /* Frameworks */,
+				5BED5DDB13BF6D4500DC5A76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BED5DDB13BF6D4500DC5A76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5DDA13BF6D4500DC5A76 /* mChat.app */,
+				5BED5E0113BF6D4700DC5A76 /* mChatTests.octest */,
+				5BED5E1413BF6D4700DC5A76 /* mChatImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BED5DDD13BF6D4500DC5A76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5DDE13BF6D4500DC5A76 /* Cocoa.framework */,
+				5BED5E1813BF6D4700DC5A76 /* CoreServices.framework */,
+				5BED5E1A13BF6D4700DC5A76 /* CoreFoundation.framework */,
+				5BED5E1C13BF6D4700DC5A76 /* CoreData.framework */,
+				5BED5E1E13BF6D4700DC5A76 /* Foundation.framework */,
+				5BDD9C0D13C9C0C9005D7BF2 /* libcrypto.dylib */,
+				5BDD9C0A13C9C0B6005D7BF2 /* libssl.dylib */,
+				5B39A3C313E49A040056CC74 /* libxml2.2.dylib */,
+				B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */,
+				5BDD9C5C13C9CBB8005D7BF2 /* SystemConfiguration.framework */,
+				5BED5DE013BF6D4500DC5A76 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BED5DE013BF6D4500DC5A76 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5DE113BF6D4500DC5A76 /* AppKit.framework */,
+				5BED5DE213BF6D4500DC5A76 /* CoreData.framework */,
+				5BED5DE313BF6D4500DC5A76 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5BED5DE413BF6D4500DC5A76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B3E7EC913BFD48A0004D8CD /* RowResizableOutlineView.h */,
+				5B3E7ECA13BFD48A0004D8CD /* RowResizableOutlineView.m */,
+				5B3E7ECB13BFD48A0004D8CD /* RowResizableTableView.h */,
+				5B3E7ECC13BFD48A0004D8CD /* RowResizableTableView.m */,
+				5B3E7ECD13BFD48A0004D8CD /* RowResizableViewImplementation.h */,
+				5B3E7ECE13BFD48A0004D8CD /* RowResizableViewMethods.h */,
+				5B3E7ECF13BFD48A0004D8CD /* RowResizableViewVars.h */,
+				5BED5DF913BF6D4600DC5A76 /* ChatController.xcdatamodeld */,
+				5BED5DE513BF6D4500DC5A76 /* Supporting Files */,
+			);
+			name = Views;
+			path = mChat;
+			sourceTree = "<group>";
+		};
+		5BED5DE513BF6D4500DC5A76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5DE613BF6D4500DC5A76 /* mChat-Info.plist */,
+				5BED5DE713BF6D4500DC5A76 /* InfoPlist.strings */,
+				5BED5DEA13BF6D4500DC5A76 /* mChat-Prefix.pch */,
+				5BED5DEB13BF6D4500DC5A76 /* main.m */,
+				5BED5DED13BF6D4500DC5A76 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BED5E0513BF6D4700DC5A76 /* mChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5E0C13BF6D4700DC5A76 /* mChatTests.h */,
+				5BED5E0E13BF6D4700DC5A76 /* mChatTests.m */,
+				5BED5E0613BF6D4700DC5A76 /* Supporting Files */,
+			);
+			path = mChatTests;
+			sourceTree = "<group>";
+		};
+		5BED5E0613BF6D4700DC5A76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5E0713BF6D4700DC5A76 /* mChatTests-Info.plist */,
+				5BED5E0813BF6D4700DC5A76 /* InfoPlist.strings */,
+				5BED5E0B13BF6D4700DC5A76 /* mChatTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BED5E2013BF6D4700DC5A76 /* mChatImporter */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5E2913BF6D4700DC5A76 /* GetMetadataForFile.m */,
+				5BED5E2B13BF6D4700DC5A76 /* MySpotlightImporter.h */,
+				5BED5E2C13BF6D4700DC5A76 /* MySpotlightImporter.m */,
+				5BED5E2E13BF6D4700DC5A76 /* Importer Read Me.txt */,
+				5BED5E2113BF6D4700DC5A76 /* Supporting Files */,
+			);
+			path = mChatImporter;
+			sourceTree = "<group>";
+		};
+		5BED5E2113BF6D4700DC5A76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5E2213BF6D4700DC5A76 /* mChatImporter-Info.plist */,
+				5BED5E2313BF6D4700DC5A76 /* InfoPlist.strings */,
+				5BED5E2613BF6D4700DC5A76 /* mChatImporter-Prefix.pch */,
+				5BED5E2713BF6D4700DC5A76 /* main.c */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BF61E9A13C25D69009B2BD6 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				5BED5DF313BF6D4500DC5A76 /* ChatController.xib */,
+				5BED5DF613BF6D4600DC5A76 /* MainMenu.xib */,
+			);
+			name = XIBs;
+			path = mChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BED5DD913BF6D4500DC5A76 /* mChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BED5E3413BF6D4700DC5A76 /* Build configuration list for PBXNativeTarget "mChat" */;
+			buildPhases = (
+				5BED5DD613BF6D4500DC5A76 /* Sources */,
+				5BED5DD713BF6D4500DC5A76 /* Frameworks */,
+				5BED5DD813BF6D4500DC5A76 /* Resources */,
+				5BDD9C1513C9C597005D7BF2 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B5B276113CE3E9E00ED9233 /* PBXTargetDependency */,
+			);
+			name = mChat;
+			productName = mChat;
+			productReference = 5BED5DDA13BF6D4500DC5A76 /* mChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BED5E0013BF6D4700DC5A76 /* mChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BED5E3713BF6D4700DC5A76 /* Build configuration list for PBXNativeTarget "mChatTests" */;
+			buildPhases = (
+				5BED5DFC13BF6D4700DC5A76 /* Sources */,
+				5BED5DFD13BF6D4700DC5A76 /* Frameworks */,
+				5BED5DFE13BF6D4700DC5A76 /* Resources */,
+				5BED5DFF13BF6D4700DC5A76 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BED5E0413BF6D4700DC5A76 /* PBXTargetDependency */,
+			);
+			name = mChatTests;
+			productName = mChatTests;
+			productReference = 5BED5E0113BF6D4700DC5A76 /* mChatTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5BED5E1313BF6D4700DC5A76 /* mChatImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BED5E3113BF6D4700DC5A76 /* Build configuration list for PBXNativeTarget "mChatImporter" */;
+			buildPhases = (
+				5BED5E1013BF6D4700DC5A76 /* Sources */,
+				5BED5E1113BF6D4700DC5A76 /* Frameworks */,
+				5BED5E1213BF6D4700DC5A76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mChatImporter;
+			productName = mChatImporter;
+			productReference = 5BED5E1413BF6D4700DC5A76 /* mChatImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BED5DD113BF6D4400DC5A76 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5BED5DD413BF6D4400DC5A76 /* Build configuration list for PBXProject "mChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BED5DCF13BF6D4400DC5A76;
+			productRefGroup = 5BED5DDB13BF6D4500DC5A76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BED5DD913BF6D4500DC5A76 /* mChat */,
+				5BED5E0013BF6D4700DC5A76 /* mChatTests */,
+				5BED5E1313BF6D4700DC5A76 /* mChatImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BED5DD813BF6D4500DC5A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5B276213CE3EA700ED9233 /* mChatImporter.mdimporter in Resources */,
+				5BED5DE913BF6D4500DC5A76 /* InfoPlist.strings in Resources */,
+				5BED5DEF13BF6D4500DC5A76 /* Credits.rtf in Resources */,
+				5BED5DF513BF6D4500DC5A76 /* ChatController.xib in Resources */,
+				5BED5DF813BF6D4600DC5A76 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BED5DFE13BF6D4700DC5A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5E0A13BF6D4700DC5A76 /* InfoPlist.strings in Resources */,
+				5BED5E0D13BF6D4700DC5A76 /* mChatTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BED5E1213BF6D4700DC5A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5E2513BF6D4700DC5A76 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BED5DFF13BF6D4700DC5A76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BED5DD613BF6D4500DC5A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5DEC13BF6D4500DC5A76 /* main.m in Sources */,
+				5BED5DF213BF6D4500DC5A76 /* ChatController.m in Sources */,
+				5BED5DFB13BF6D4600DC5A76 /* ChatController.xcdatamodeld in Sources */,
+				5B05397013BF85D50002D259 /* XMPPManager.m in Sources */,
+				5B3E7ED013BFD48A0004D8CD /* RowResizableOutlineView.m in Sources */,
+				5B3E7ED113BFD48A0004D8CD /* RowResizableTableView.m in Sources */,
+				5B2061D913C0A02500527761 /* RosterController.m in Sources */,
+				5BFA6B2713C31D070055B1B0 /* XMLProcessor.m in Sources */,
+				5B6A74E513DC9C500052E14B /* Thread.m in Sources */,
+				5B43154A13E0118A008838FE /* NetStream.m in Sources */,
+				5B7F4E2B13E08E4800180D86 /* XMLRepresentation.m in Sources */,
+				5B39A3C113E4999C0056CC74 /* ChunkXMLParser.m in Sources */,
+				5B9E005013E6EC4C00DAC8DF /* XMLRepFeatures.m in Sources */,
+				5B9E005413E6ECFF00DAC8DF /* XMLRepChat.m in Sources */,
+				5B9E005513E6ECFF00DAC8DF /* XMLRepIQ.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BED5DFC13BF6D4700DC5A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5E0F13BF6D4700DC5A76 /* mChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BED5E1013BF6D4700DC5A76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BED5E2813BF6D4700DC5A76 /* main.c in Sources */,
+				5BED5E2A13BF6D4700DC5A76 /* GetMetadataForFile.m in Sources */,
+				5BED5E2D13BF6D4700DC5A76 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B5B276113CE3E9E00ED9233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BED5E1313BF6D4700DC5A76 /* mChatImporter */;
+			targetProxy = 5B5B276013CE3E9E00ED9233 /* PBXContainerItemProxy */;
+		};
+		5BED5E0413BF6D4700DC5A76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BED5DD913BF6D4500DC5A76 /* mChat */;
+			targetProxy = 5BED5E0313BF6D4700DC5A76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BED5DE713BF6D4500DC5A76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BED5DE813BF6D4500DC5A76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BED5DED13BF6D4500DC5A76 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BED5DEE13BF6D4500DC5A76 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5BED5DF313BF6D4500DC5A76 /* ChatController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BED5DF413BF6D4500DC5A76 /* en */,
+			);
+			name = ChatController.xib;
+			sourceTree = "<group>";
+		};
+		5BED5DF613BF6D4600DC5A76 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BED5DF713BF6D4600DC5A76 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5BED5E0813BF6D4700DC5A76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BED5E0913BF6D4700DC5A76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BED5E2313BF6D4700DC5A76 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BED5E2413BF6D4700DC5A76 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BED5E2F13BF6D4700DC5A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lcrypto";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BED5E3013BF6D4700DC5A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "-lcrypto";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BED5E3213BF6D4700DC5A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mChatImporter/mChatImporter-Prefix.pch";
+				INFOPLIST_FILE = "mChatImporter/mChatImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		5BED5E3313BF6D4700DC5A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mChatImporter/mChatImporter-Prefix.pch";
+				INFOPLIST_FILE = "mChatImporter/mChatImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		5BED5E3513BF6D4700DC5A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = mChat/mChat.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Finished/Build_projects/Deployment\"",
+					"\"$(SRCROOT)/../../Finished/Build/XMPP-gdxoydznqeedkcfkagfkccmvnmhl/Build/Products/Deployment\"",
+					"\"$(SRCROOT)/../../Finished/Build/XMPP-gdxoydznqeedkcfkagfkccmvnmhl/Build/Products/Development\"",
+					"\"$(SRCROOT)/../../Finished/Build/Builds/Products/Development\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mChat/mChat-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				INFOPLIST_FILE = "mChat/mChat-Info.plist";
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BED5E3613BF6D4700DC5A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = mChat/mChat.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Finished/Build_projects/Deployment\"",
+					"\"$(SRCROOT)/../../Finished/Build/XMPP-gdxoydznqeedkcfkagfkccmvnmhl/Build/Products/Deployment\"",
+					"\"$(SRCROOT)/../../Finished/Build/XMPP-gdxoydznqeedkcfkagfkccmvnmhl/Build/Products/Development\"",
+					"\"$(SRCROOT)/../../Finished/Build/Builds/Products/Development\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mChat/mChat-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
+				INFOPLIST_FILE = "mChat/mChat-Info.plist";
+				OTHER_LDFLAGS = "-lcrypto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5BED5E3813BF6D4700DC5A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mChat.app/Contents/MacOS/mChat";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mChatTests/mChatTests-Prefix.pch";
+				INFOPLIST_FILE = "mChatTests/mChatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5BED5E3913BF6D4700DC5A76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mChat.app/Contents/MacOS/mChat";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mChatTests/mChatTests-Prefix.pch";
+				INFOPLIST_FILE = "mChatTests/mChatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BED5DD413BF6D4400DC5A76 /* Build configuration list for PBXProject "mChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BED5E2F13BF6D4700DC5A76 /* Debug */,
+				5BED5E3013BF6D4700DC5A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5BED5E3113BF6D4700DC5A76 /* Build configuration list for PBXNativeTarget "mChatImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BED5E3213BF6D4700DC5A76 /* Debug */,
+				5BED5E3313BF6D4700DC5A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5BED5E3413BF6D4700DC5A76 /* Build configuration list for PBXNativeTarget "mChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BED5E3513BF6D4700DC5A76 /* Debug */,
+				5BED5E3613BF6D4700DC5A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5BED5E3713BF6D4700DC5A76 /* Build configuration list for PBXNativeTarget "mChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BED5E3813BF6D4700DC5A76 /* Debug */,
+				5BED5E3913BF6D4700DC5A76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5BED5DF913BF6D4600DC5A76 /* ChatController.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5BED5DFA13BF6D4600DC5A76 /* ChatController.xcdatamodel */,
+			);
+			currentVersion = 5BED5DFA13BF6D4600DC5A76 /* ChatController.xcdatamodel */;
+			path = ChatController.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5BED5DD113BF6D4400DC5A76 /* Project object */;
+}
