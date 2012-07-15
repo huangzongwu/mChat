@@ -44,8 +44,7 @@
 		5BED5E2A13BF6D4700DC5A76 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5E2913BF6D4700DC5A76 /* GetMetadataForFile.m */; };
 		5BED5E2D13BF6D4700DC5A76 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BED5E2C13BF6D4700DC5A76 /* MySpotlightImporter.m */; };
 		5BFA6B2713C31D070055B1B0 /* XMLProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA6B2613C31D070055B1B0 /* XMLProcessor.m */; };
-		B7FDA9101545899500A1B3A9 /* SSCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */; };
-		B7FDA911154589AE00A1B3A9 /* SSCrypto.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */; };
+		B7695A5E15B31E2D004FD526 /* SSCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B7695A5D15B31E2D004FD526 /* SSCrypto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B7FDA911154589AE00A1B3A9 /* SSCrypto.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +141,8 @@
 		5BED5E2E13BF6D4700DC5A76 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
 		5BFA6B2513C31D070055B1B0 /* XMLProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLProcessor.h; sourceTree = "<group>"; };
 		5BFA6B2613C31D070055B1B0 /* XMLProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLProcessor.m; sourceTree = "<group>"; };
-		B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SSCrypto.framework; path = ../../Finished/Build/Builds/Products/Development/SSCrypto.framework; sourceTree = "<group>"; };
+		B7695A5C15B31E2D004FD526 /* SSCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSCrypto.h; sourceTree = "<group>"; };
+		B7695A5D15B31E2D004FD526 /* SSCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSCrypto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +155,6 @@
 				5BDD9C0E13C9C0C9005D7BF2 /* libcrypto.dylib in Frameworks */,
 				5BDD9C0B13C9C0B6005D7BF2 /* libssl.dylib in Frameworks */,
 				5B39A3C413E49A050056CC74 /* libxml2.2.dylib in Frameworks */,
-				B7FDA9101545899500A1B3A9 /* SSCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				5B04435113DA156D00601A34 /* mChat.entitlements */,
+				B7695A5A15B31E01004FD526 /* SSCrypto */,
 				5B05397113BF85E10002D259 /* Network */,
 				5B3E7EC813BFD4550004D8CD /* Controllers */,
 				5BED5DE413BF6D4500DC5A76 /* Views */,
@@ -269,7 +268,6 @@
 				5BDD9C0D13C9C0C9005D7BF2 /* libcrypto.dylib */,
 				5BDD9C0A13C9C0B6005D7BF2 /* libssl.dylib */,
 				5B39A3C313E49A040056CC74 /* libxml2.2.dylib */,
-				B7FDA90A154588BA00A1B3A9 /* SSCrypto.framework */,
 				5BDD9C5C13C9CBB8005D7BF2 /* SystemConfiguration.framework */,
 				5BED5DE013BF6D4500DC5A76 /* Other Frameworks */,
 			);
@@ -366,6 +364,15 @@
 			);
 			name = XIBs;
 			path = mChat;
+			sourceTree = "<group>";
+		};
+		B7695A5A15B31E01004FD526 /* SSCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				B7695A5C15B31E2D004FD526 /* SSCrypto.h */,
+				B7695A5D15B31E2D004FD526 /* SSCrypto.m */,
+			);
+			name = SSCrypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +525,7 @@
 				5B9E005013E6EC4C00DAC8DF /* XMLRepFeatures.m in Sources */,
 				5B9E005413E6ECFF00DAC8DF /* XMLRepChat.m in Sources */,
 				5B9E005513E6ECFF00DAC8DF /* XMLRepIQ.m in Sources */,
+				B7695A5E15B31E2D004FD526 /* SSCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +707,7 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
 				INFOPLIST_FILE = "mChat/mChat-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-lcrypto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -728,6 +737,7 @@
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = $SDKROOT/usr/include/libxml2;
 				INFOPLIST_FILE = "mChat/mChat-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_LDFLAGS = "-lcrypto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

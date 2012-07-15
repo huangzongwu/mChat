@@ -7,7 +7,7 @@
 //
 
 
-#import <SSCrypto/SSCrypto.h>
+#import "SSCrypto.h"
 #import "XMPPManager.h"
 #import "XMLRepresentation.h"
 
